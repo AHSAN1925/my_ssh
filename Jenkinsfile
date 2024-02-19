@@ -11,7 +11,7 @@ pipeline {
                     def remotePwd = 'ali123'     // Password for SSH login (or use SSH key)
 
                     // SSH command to create a file on the remote server
-                    sh "sshpass -p '${remotePwd}' ssh ${remoteUser}@${remoteServer} 'echo \"This is a test file created by Jenkins\" > //home/ali123/new_ssh/newfile.txt'"
+                    sh "sshpass -p '${remotePwd}' ssh ${remoteUser}@${remoteServer} 'echo \"This is a test file created by Jenkins\" > //home/ali123/new_ssh'"
                 }
             }
         }
